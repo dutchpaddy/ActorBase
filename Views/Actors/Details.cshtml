@@ -1,0 +1,36 @@
+﻿@using ActorBase.Models
+@model ActorBase.Models.Actors
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Actor Details</title>
+    <link type="text/css" rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <H1> Actor - Detailed </H1>
+    <br />
+    <table>
+        <tr>
+            <td><bold>Name:</bold></td>
+            <td>@Html.DisplayFor(modelItem => Model.Name)</td>
+        </tr>
+        <tr>
+            <td><bold>Age: </bold></td>
+            <td>@Html.DisplayFor(modelItem => Model.Age)</td>
+        </tr>
+        <tr>
+            <td><bold>AcademyWinner:</bold></td>
+            <td>@Html.DisplayFor(modelItem => Model.AcademyWinner)</td>
+        </tr>
+    </table>
+    <br />
+
+    <form method="POST">
+        <button asp-controller="Actors" asp-action="Index">Back to Main page</button>
+    </form>
+</body>
+</html>

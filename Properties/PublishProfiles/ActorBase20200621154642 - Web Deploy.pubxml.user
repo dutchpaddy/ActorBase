@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACyWAoC0hXkGYC55bYFfqGQAAAAACAAAAAAAQZgAAAAEAACAAAAAOE3vFPOE4XSdEq37E1gRC46APmFveJZqdvKuS0+mOewAAAAAOgAAAAAIAACAAAAC9Gzlol2iNFETFXurbyi2BO6o3BX5JnWdjke4DUPNj0YAAAABZZPntaqWF+sLPFz64wAGOKfWeQ4i5j6SZvgcIBnWtnUaWNwC69VHmTdnZLhnAXEISKuHzKbLDopJN3R+nZt4jCno2nwujoESYBCkcGeniZmGd5dyo5DO7XVBdr+QeXC+UebBSUTmCkYTjPiSAG8Q3QKWFB/590Zt7ek2eklhma0AAAABwIudSrtFL+f4XWlcF72SlwHSpXCIEndy0lJ5qzFyJ3CToAOCqv1VHESsuS1Jp26sjxhQcgDLdd4hinlJHHQws</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:actorbasedbserver.database.windows.net,1433%3bInitial Catalog=ActorBase_db%3bUser Id=dutchpaddy%40actorbasedbserver%3bPassword=%40Princesa0720</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ActorBase.Models.ActorDbContext">
+      <Value>Data Source=tcp:actorbasedbserver.database.windows.net,1433%3bInitial Catalog=ActorBase_db%3bUser Id=dutchpaddy%40actorbasedbserver%3bPassword=%40Princesa0720</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

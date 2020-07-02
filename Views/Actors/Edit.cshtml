@@ -1,0 +1,40 @@
+﻿@using ActorBase.Models
+@model ActorBase.Models.Actors
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+    <link type="text/css" rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Edit Actor</h1>
+        <form method="post" enctype="multipart/form-data" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-field">
+                <label asp-for="Name"></label>
+                <textarea asp-for="Name"></textarea>
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="Age"></label>
+                <textarea asp-for="Age"></textarea>
+                <span asp-validation-for="Age"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="AcademyWinner"></label>
+                <textarea asp-for="AcademyWinner"></textarea>
+                <span asp-validation-for="AcademyWinner"></span>
+            </div>
+
+            <div class="form-field">
+                <input type="submit" value="Save" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
